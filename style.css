@@ -1,3 +1,21 @@
 body {
-  background-color: salmon;
+  /* background-color: salmon; */
+  background-image: url(https://www.10wallpaper.com/wallpaper/1366x768/1208/Blue_Hawaiian_printing-Mac_OS_Wallpaper_1366x768.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+.container {
+  text-align: center;
+  margin: auto;
+  margin-top: 5%;
+  padding: 10px;
+  background-color: azure;
+}
+/* font ideas Ruslan Display, ribeye, slackey */
+h1,
+h4,
+button {
+  font-family: "Slackey", cursive;
 }

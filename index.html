@@ -6,23 +6,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sarcasm Generator</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Slackey&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <main>
-        <h1>Sarcasm Text Generator</h1>
-        <form action="/action_page.php">
-            <label for="startText">Regular text:</label><br>
-            <!-- <input type="text" id="starterText" name="starterText" placeholder="Enter text here"><br><br> -->
-            <textarea name="startText" id="startText" cols="30" rows="10" placeholder="Enter text here"></textarea><br>
-        </form>
-        <button onclick=sarcasmify()>Sacasmify!</button>
-        <h4>
+        <div class="container">
+            <h1>Sarcasm Text Generator</h1>
+            <form action="/action_page.php">
+                <h4 for="startText">Regular text:</h4>
+                <textarea name="startText" id="startText" cols="30" rows="10"
+                    placeholder="Enter text here"></textarea><br>
+            </form>
+            <button onclick=sarcasmify()>Sarcasmify!</button><br /><br />
+            <p>
             <div id="sarcasmText"></div>
-        </h4>
+            </p>
+        </div>
+
 
     </main>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
     <script src="./sarcasm.js"></script>
 </body>
 
