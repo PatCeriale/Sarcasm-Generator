@@ -5,9 +5,11 @@ const sarcasmBox = document.getElementById("sarcasmText");
 function sarcasmify() {
   event.preventDefault();
 
+  // Turn input into array
   const inputText = startText.value.trim();
   const textArray = inputText.split("");
 
+  // Map over array, 50/50 chance of letter's case
   const newArray = textArray.map((x) => {
     if (Math.random() < 0.5) {
       return x.toLowerCase();
@@ -16,8 +18,10 @@ function sarcasmify() {
     }
   });
 
+  // Join array back to a string
   const sarcasmText = newArray.join("");
   console.log(sarcasmText);
+
   // Returns text to sarcasm box
   sarcasmBox.innerHTML = sarcasmText;
 }
