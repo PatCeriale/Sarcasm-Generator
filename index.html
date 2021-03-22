@@ -13,17 +13,17 @@
     <main>
         <h1>Sarcasm Text Generator</h1>
         <form action="/action_page.php">
-            <label for="starterText">Regular text</label><br>
+            <label for="startText">Regular text:</label><br>
             <!-- <input type="text" id="starterText" name="starterText" placeholder="Enter text here"><br><br> -->
             <textarea name="startText" id="startText" cols="30" rows="10" placeholder="Enter text here"></textarea><br>
-            <button type="submit">Sacasmify!</button>
         </form>
+        <button onclick=sarcasmify()>Sacasmify!</button>
         <h4>
             <div id="sarcasmText"></div>
         </h4>
 
     </main>
-
+    <script src="./sarcasm.js"></script>
 </body>
 
 </html>

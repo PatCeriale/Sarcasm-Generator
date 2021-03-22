@@ -8,6 +8,8 @@ This project is meant to turn your regular boring text into the sarcasmic font m
 
 > " 'With great power, comes great responsibility' - Uncle Ben" - Michael Scott
 
+Deployed link: https://patceriale.github.io/Sarcasm-Generator/
+
 ## **Table of Contents**
 
 1. [Usage](#usage)
