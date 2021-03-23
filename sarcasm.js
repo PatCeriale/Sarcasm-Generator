@@ -32,6 +32,8 @@ function sarcasmify() {
   const copyText = document.getElementById("sarcasmText").textContent;
   if (copyText.length > 0) {
     copyBtn.style.display = "inline-block";
+  } else {
+    copyBtn.style.display = "none";
   }
 
   //   const copyBtn = document.createElement(`BUTTON`);
