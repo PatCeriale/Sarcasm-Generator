@@ -1,6 +1,7 @@
 const startText = document.getElementById("startText");
 const sarcasmBox = document.getElementById("sarcasmText");
 const btnBox = document.getElementById("btnBox");
+const copyBtn = document.getElementById("copyBtn");
 
 // Sarcasmify onClick Event
 function sarcasmify() {
@@ -24,9 +25,14 @@ function sarcasmify() {
   console.log(sarcasmText);
 
   // Sets sarcasmified text as html
+
   sarcasmBox.innerHTML = sarcasmText;
 
-  // Append copy button to page
+  // Show copy button when there is text that has been changed
+  const copyText = document.getElementById("sarcasmText").textContent;
+  if (copyText.length > 0) {
+    copyBtn.style.display = "inline-block";
+  }
 
   //   const copyBtn = document.createElement(`BUTTON`);
   //   copyBtn.innerHTML = "Copy to clipboard";
@@ -40,14 +46,14 @@ function sarcasmify() {
 // Copy text to clipboard
 
 function copyTextFunction() {
-  var copyText = document.getElementById("sarcasmText").textContent;
+  const copyText = document.getElementById("sarcasmText").textContent;
   const el = document.createElement("textarea");
   el.value = copyText;
   el.setAttribute("readonly", "");
   el.style.position = "absolute";
   el.style.left = "-9999px";
   document.body.appendChild(el);
-  console.log(copyText);
+  console.log(copyText.length);
   el.focus();
   el.select();
   //   copyText.setSelectionRange(0, 99999);
